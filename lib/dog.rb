@@ -68,8 +68,9 @@ class Dog
       dog_array = dog[0]
       dog = Dog.new(dog_array[0], dog_array[1], dog_array[2])
     else
-      dog = 
+      dog = self.create(name:name, breed:breed)
     end
+    dog
   end
   
   
