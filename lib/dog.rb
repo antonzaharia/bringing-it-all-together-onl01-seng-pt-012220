@@ -54,7 +54,7 @@ class Dog
   end
   
   def save
-    if self.id
+    if !self.id:nil
       self.update
     else
       sql = "INSERT INTO dogs (name, breed) VALUES (?, ?)"
