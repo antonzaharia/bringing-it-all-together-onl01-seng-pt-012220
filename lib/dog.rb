@@ -62,7 +62,7 @@ class Dog
     new_dog
   end
   
-  def 
+  def self.find_or_create_by
   
   
   
