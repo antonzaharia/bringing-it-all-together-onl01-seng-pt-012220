@@ -57,9 +57,6 @@ class Dog
   end
   
   def self.create(hash)
-    # id = hash[0]
-    # name = hash[1]
-    # breed = hash[2]
     new_dog = Dog.new(hash)
     new_dog.save
     new_dog
