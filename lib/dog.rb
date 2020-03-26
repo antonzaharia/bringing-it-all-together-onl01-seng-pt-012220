@@ -25,8 +25,13 @@ class Dog
     Dog.new(id:id, name:name, breed:breed)
   end
   
-  def self.create
-    
+  def self.create(hash)
+    id = hash[0]
+    name = hash[1]
+    breed = hash[2]
+    new_dog = Dog.new(id:id, name:name, breed:breed)
+    new_dog.save
+    new_dog
   end
   
   def self.find_by_name(name)
